@@ -21,7 +21,7 @@
 	<body id="top">
 
       <header id="header">
-          <a href="#" class="image avatar"><img src="/images/avatar.png" alt="" /></a>
+          <a href="#" class="image avatar"><img src="/images/logo.jpg" alt="" /></a>
           <h1>Welcome to <strong>Montreal Succulent</strong></h1>
       </header>
 
@@ -31,11 +31,10 @@
         <!-- Footer -->
         <footer id="footer">
             <ul class="icons">
-
-              {% if site.github_username %}
+              {% if site.instagram_username %}
               <li>
-                <a href="https://github.com/{{ site.github_username }}" class="icon fa-github">
-                  <span class="label">GitHub</span>
+                <a href="https://www.instagram.com/{{ site.instagram_username }}" class="icon fa-instagram">
+                  <span class="label">Instagram</span>
                 </a>
               </li>
               {% endif %}
@@ -44,6 +43,14 @@
               <li>
                 <a href="https://twitter.com/{{ site.twitter_username }}" class="icon fa-twitter">
                   <span class="label">Twitter</span>
+                </a>
+              </li>
+              {% endif %}
+
+              {% if site.github_username %}
+              <li>
+                <a href="https://github.com/{{ site.github_username }}" class="icon fa-github">
+                  <span class="label">GitHub</span>
                 </a>
               </li>
               {% endif %}
